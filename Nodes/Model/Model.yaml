@@ -1,0 +1,64 @@
+Name: Model
+Type: FolderType
+Children:
+- Name: varArray
+  Id: g=25eb4481c27d99cbacc6a394783ed189
+  Type: BaseDataVariableType
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [200]
+  Value: [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+- Name: varMatrix
+  Id: g=dbf43cebdae0f414d9c80e79aeefe95a
+  Type: BaseDataVariableType
+  DataType: Boolean
+  ValueRank: 2
+  ArrayDimensions: [10,20]
+  Value: 
+   {
+    "Type": 1,
+    "Dimensions": [10,20],
+    "Body": [
+     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false
+    ]
+   }
+- Name: varUInt16
+  Id: g=d888702224bc438501aa4a4e19ac916a
+  Type: BaseDataVariableType
+  DataType: UInt16
+  Value: 0
+- Name: ScalarToBitArrayConverter1
+  Type: BaseObjectType
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: ScalarToBitArrayConverterLogic
+    Type: NetLogic
+  - Name: ArrayVariable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ValueRank: OneDimension
+    ArrayDimensions: [16]
+    Value: [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+  - Name: ScalarVariable
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DataBind
+      DataType: NodePath
+      Value: "../../varUInt16"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DataBindModeType
+        Value: 2

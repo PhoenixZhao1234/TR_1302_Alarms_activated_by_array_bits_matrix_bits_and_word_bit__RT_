@@ -1,0 +1,233 @@
+Name: Alarms
+Type: FolderType
+Children:
+- Name: DigitalAlarm1
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DataBind
+      DataType: NodePath
+      Value: "../../../Model/varArray[50]"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DataBindModeType
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=12;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=83
+    Direction: Forward
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Array [50]"}
+- Name: DigitalAlarm2
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DataBind
+      DataType: NodePath
+      Value: "../../../Model/varArray[100]"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DataBindModeType
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=12;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=83
+    Direction: Forward
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Array [100]"}
+- Name: DigitalAlarm3
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DataBind
+      DataType: NodePath
+      Value: "../../../Model/varArray[150]"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DataBindModeType
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=12;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=83
+    Direction: Forward
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Array [150]"}
+- Name: DigitalAlarm4
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DataBind
+      DataType: NodePath
+      Value: "../../../Model/varMatrix[5,5]"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DataBindModeType
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=12;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=83
+    Direction: Forward
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Matrix [5;5]"}
+- Name: DigitalAlarm5
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DataBind
+      DataType: NodePath
+      Value: "../../../Model/varMatrix[1,19]"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DataBindModeType
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=12;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=83
+    Direction: Forward
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Matrix [1;19]"}
+- Name: DigitalAlarm6
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DataBind
+      DataType: NodePath
+      Value: "../../../Model/ScalarToBitArrayConverter1/ArrayVariable[1]"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DataBindModeType
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=12;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=83
+    Direction: Forward
